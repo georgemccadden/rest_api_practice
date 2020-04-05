@@ -11,6 +11,9 @@ const app = express();
 
 
 // Middlewares
+const postsRoute = require('./routes/posts');
+
+app.use('/posts', postsRoute);
 
 // app.use('/posts', () => {
 //     console.log('This is working middleware..');
@@ -21,10 +24,6 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send('We are running');
-});
-
-app.get('/posts', (req, res) => {
-    res.send('We are posting');
 });
 
 
