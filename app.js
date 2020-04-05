@@ -2,6 +2,7 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 require('dotenv/config');
 
 
@@ -10,9 +11,10 @@ require('dotenv/config');
 const app = express();
 
 
-// Middlewares
+// Middleware
 const postsRoute = require('./routes/posts');
 
+app.use(bodyParser.json());
 app.use('/posts', postsRoute);
 
 
