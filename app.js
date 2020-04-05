@@ -2,16 +2,17 @@
 
 const express = require('express');
 
+
+// Now I can create routes in a simpler way.
+
+const app = express();
+
+
 // Middlewares
 
 app.use('/posts', () => {
     console.log('This is working middleware..');
 });
-
-
-// Now I can create routes in a simpler way.
-
-const app = express();
 
 
 // Routes
