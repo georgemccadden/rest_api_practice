@@ -1,0 +1,24 @@
+{
+  "name": "rest_api_practice",
+  "version": "1.0.0",
+  "description": "This repository will be where I'll be practicing building a RESTful API in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thethirdone-g/rest_api_practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thethirdone-g/rest_api_practice/issues"
+  },
+  "homepage": "https://github.com/thethirdone-g/rest_api_practice#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
