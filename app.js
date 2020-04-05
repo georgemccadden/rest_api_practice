@@ -15,10 +15,6 @@ const postsRoute = require('./routes/posts');
 
 app.use('/posts', postsRoute);
 
-// app.use('/posts', () => {
-//     console.log('This is working middleware..');
-// });
-
 
 // Routes
 
