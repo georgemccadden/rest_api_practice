@@ -1,6 +1,12 @@
-const express = require('express'); // I need the package in this file.
+// Importing the package that I need in this file.
 
-const app = express(); // Now I can create routes in a simpler way.
+const express = require('express');
+
+
+// Now I can create routes in a simpler way.
+
+const app = express();
+
 
 // Routes
 
@@ -8,5 +14,12 @@ app.get('/', (req, res) => {
     res.send('We are running');
 });
 
-app.listen(3000); // I've gotta start listening to the server.
+app.get('/posts', (req, res) => {
+    res.send('We are posting');
+});
+
+
+// I've gotta start listening to the server.
+
+app.listen(3000);
 
