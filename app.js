@@ -2,6 +2,12 @@
 
 const express = require('express');
 
+// Middlewares
+
+app.use('/posts', () => {
+    console.log('This is working middleware..');
+});
+
 
 // Now I can create routes in a simpler way.
 
